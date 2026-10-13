@@ -1,4 +1,4 @@
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y'
-AND recyclable = 'Y';
+SELECT name
+FROM Customer
+WHERE referee_id != 2
+   OR referee_id IS NULL;
