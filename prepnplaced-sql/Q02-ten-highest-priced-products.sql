@@ -1,6 +1,5 @@
-SELECT 
-      ProductID, Product, Brand, Sale_Price
-FROM products
-WHERE Sale_Price IS NOT NULL
-ORDER BY Sale_Price DESC, ProductID
-LIMIT 10;
+SELECT LOWER(TRIM(CISELECT LOWER(TRIM(CITY)) as City_clean, COUNT(*) AS n  
+FROM customers
+GROUP BY LOWER(TRIM(CITY))
+ORDER BY city_clean;
+
